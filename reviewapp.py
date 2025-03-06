@@ -2,8 +2,6 @@ import streamlit as st
 import pandas as pd
 import re
 from collections import Counter
-import nltk
-from nltk.tokenize import word_tokenize
 import string
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -22,7 +20,8 @@ def download_nltk_data():
     nltk.download('vader_lexicon')  # Added VADER lexicon download
 
 download_nltk_data()
-
+import nltk
+from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.sentiment.vader import SentimentIntensityAnalyzer  # Imported SentimentIntensityAnalyzer
 
