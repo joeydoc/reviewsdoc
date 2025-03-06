@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import io
 import os
+import nltk
 
 # Set visualization style
 sns.set(style="whitegrid")
@@ -20,7 +21,6 @@ def download_nltk_data():
     nltk.download('vader_lexicon')  # Added VADER lexicon download
 
 download_nltk_data()
-import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.sentiment.vader import SentimentIntensityAnalyzer  # Imported SentimentIntensityAnalyzer
