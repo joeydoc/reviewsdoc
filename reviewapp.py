@@ -8,6 +8,8 @@ import seaborn as sns
 import io
 import os
 import nltk
+from nltk.corpus import LazyCorpusLoader, wordnet
+from nltk.corpus.reader import WordListCorpusReader
 
 # Set visualization style
 sns.set(style="whitegrid")
